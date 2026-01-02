@@ -49,6 +49,7 @@ public class AdminController {
 	@GetMapping("/category")
 	public String category(org.springframework.ui.Model m) // we want only m that means model m
 	{
+		System.out.println("Category");
 	    m.addAttribute("categories", categoryService.getAllCategory());
 	    return "admin/category";
 	}
